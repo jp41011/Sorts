@@ -1,11 +1,13 @@
-// Juan P - C++
+// Juan P - Java
 /* Will implement several different sorting algorithms
 using list and array data structures. Will also compare runtime
 of the different sorting algorithms
 */
 
-int main()
+public class main
 {
-
-	return 0;
+	public static void main(String[] args)
+	{
+		System.out.println("Hello, World");
+	}
 }
