@@ -1,7 +1,6 @@
 // Juan P - C++
 /* Will implement several different sorting algorithms.
-Will also compare runtime
-of the different sorting algorithms
+Will also compare runtime of the different sorting algorithms
 */
 #include <stdlib.h> // rand - random numbers
 #include <vector>
