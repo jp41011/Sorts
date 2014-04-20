@@ -6,11 +6,13 @@ Will also compare runtime of the different sorting algorithms
 #include <vector>
 #include <stdlib.h> // rand - random numbers
 #include <time.h>
+#include "Sorts.h" // my sorting functions
 using std::cout;
 using std::endl;
 using std::cin;
 using std::vector;
 
+// overloading the << operator to print out vector elements
 std::ostream& operator << (std::ostream& out, const vector<int>& vec)
 {
 	unsigned int size = vec.size();
@@ -21,15 +23,15 @@ std::ostream& operator << (std::ostream& out, const vector<int>& vec)
 
 int main()
 {
-	unsigned int num;
-	vector<int> vec; // vector to store elements
+	unsigned short num;
+	vector<short> vec; // vector to store elements
 	cout << "Testing out algorithms" << endl;
 	cout << "How many random elements: ";
 	cin >> num;
 
 	srand(time(NULL)); // initialize random seed
 
-	for(unsigned int i=0; i < num; i++)
+	for(unsigned short i=0; i < num; i++)
 		vec.push_back((rand()%2000 - 1000)); // random values. range: -1000 to 1000
 
 	cout << vec;
