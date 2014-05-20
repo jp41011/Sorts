@@ -24,4 +24,7 @@ void quick_sort(vector<short>&, short, short);
 short random_partition(vector<short>&, short, short);
 short partition(vector<short>&, short, short);
 
+//TODO Heap Sort
+
+
 #endif

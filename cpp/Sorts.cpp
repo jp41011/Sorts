@@ -84,7 +84,7 @@ void mergeSortHelper(vector<short>& vec, short low, short high)
 {
 	if(low < high)
 	{
-		short mid = (low+high)/2; // low+(high-low)/2
+		short mid = low + ( (high-low)/2 );//(low+high)/2; // low+(high-low)/2
 		mergeSortHelper(vec, low, mid);
 		mergeSortHelper(vec, mid+1, high);
 		merge(vec, low, mid, high);
