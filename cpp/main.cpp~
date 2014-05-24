@@ -21,8 +21,7 @@ std::ostream& operator << (std::ostream& out, const vector<int>& vec)
 
 int main()
 {
-	unsigned int num, range;
-	int rangeMin, rangeMax;
+	unsigned int num;
 	vector<int> vec; // vector to store elements
 	cout << "Testing out algorithms" << endl;
 	cout << "How many random elements: ";
@@ -31,7 +30,7 @@ int main()
 	srand(time(NULL)); // initialize random seed
 
 	for(unsigned int i=0; i < num; i++)
-		vec.push_back((rand()%range + rangeMin)); // random values. range: -1000 to 1000
+		vec.push_back((rand()%2000 - 1000)); // random values. range: -1000 to 1000
 
 	cout << vec;
 
