@@ -25,6 +25,13 @@ int main()
 	int rangeMin, rangeMax;
 	vector<int> vec; // vector to store elements
 	cout << "Testing out algorithms" << endl;
+	cout << "-Set Random Range-" << endl;
+	cout << "Min: ";
+	cin >> rangeMin;
+	cout << "Max: ";
+	cin >> rangeMax;
+	rangeMax++;
+	range = rangeMax-rangeMin;
 	cout << "How many random elements: ";
 	cin >> num;
 
